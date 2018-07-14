@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- meta calls -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- script sources required to render page -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+
+    <!-- All the style sheets this will require per screen sie -->
+    <link rel="stylesheet" media="screen and (max-width: 560px)" href="css/small-stylesheet.css">
+    <link rel="stylesheet" media="screen and (min-width: 561px) and (max-width: 750px)" href="css/medium-stylesheet.css">
+    <link rel="stylesheet" media="screen and (min-width: 751px)" href="css/large-stylesheet.css">
+
+    <title>
+        Portfolio
+    </title>
+
+</head>
+
+<body>
+
+    <!-- Name of person whose work is featured -->
+    <section class="intro-header">
+        <h1 class="float-right" id="title">
+          CHRIS ASHTON
+      </h1>
+
+        <!-- catchy phrase to lighten the mood -->
+        <h3 class="float-right clear-right" id="subtitle">
+        deep in the code
+      </h3>
+
+        <!-- A line to make it classy -->
+        <hr class="clear-right">
+    </section>
+
+    <!-- Large picture of Matrix code spanning top of page -->
+    <section class="clear-right" id="matrix-code-container">
+        <h3 class="hidden">Image of Matrix code spanning top of page</h3>
+        <img src="img/matrix-code.jpg" alt="Matrix Code" id="matrix-code">
+    </section>
+
+    <!-- A phrase to introduce featured work -->
+    <h2 class="float-left" id="featuredWorkTitle">
+      Featured Work...
+    </h2>
+
+    <!-- The container that holds all of the featured work -->
+    <section class="container clear-left" id="features-container">
+        <h3 class="hidden">Three featured projects by Chris Ashton</h3>
+
+        <!-- feature one -->
+        <section class="single-feature-section container" id="freshTomatoesSection">
+            <h3 class="hidden">First featured work: Fresh Tomatoes website for keeping track of favorite movies</h3>
+            <div class="image-container">
+                <img src="img/FreshTomatoes.png" alt="Fresh Tomatoes logo" class="feature-image">
+            </div>
+            <p class="feature-description container" id="freshTomatoesDescription">
+                Fresh Tomatoes!
+            </p>
+        </section>
+
+        <!-- feature two -->
+        <section class="single-feature-section container" id="gitEnvironmentFeature">
+            <h3 class="hidden">Second featured work: Script for building nice git environment on Mac and Linux</h3>
+            <div class="image-container container">
+                <img src="img/sweet_new_prompt.png" alt="Colorful prompt in bash shell" class="feature-image">
+            </div>
+            <p class="feature-description container" id="perfectGitDescription">
+                Perfect Git Environment
+            </p>
+        </section>
+
+        <!-- feature three -->
+        <section class="single-feature-section container" id="spaAppSection">
+            <h3 class="hidden">Third featured work: iOS app for Sadona Salon + Spa</h3>
+            <div class="image-container container">
+                <img src="img/spa_laura.jpg" alt="Woman relaxing in the spa" class="feature-image">
+            </div>
+            <p class="feature-description container" id="spaAppDescription">
+                Sadona Salon + Spa App
+            </p>
+        </section>
+
+    </section>
+
+    <!-- Scripts for making responsive changes to page -->
+    <script>
+        $(document).ready(function() {
+            changeFeatureDescriptions();
+            $(window).resize(function() {
+                changeFeatureDescriptions();
+                adjustTopPicture();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

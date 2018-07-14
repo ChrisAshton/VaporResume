@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #2d3c49;
+}
+
+a {
+  color: #2d3c49;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  max-width: 1050px;
+  height: 100%;
+  margin: auto;
+}
+
+/* method for hiding content for benefit of screen readers copied from
+ https://webaim.org/techniques/css/invisiblecontent/ on 7 June 2018 */
+
+.hidden {
+  position:absolute;
+  left:-100px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.intro-header {
+  background-color: rgba(255,255,255,0.6);
+  margin-bottom: 1px
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-left {
+  clear:left;
+}
+
+header {
+  min-width: 100%;
+}
+
+
+
+#title {
+  margin-bottom: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2.2em;
+  color: #2d3c49;
+}
+
+#subtitle {
+  margin-top: 0px;
+  font-family: "Roboto", sans-serif
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #2d3c49;
+}
+
+hr {
+  height: 2px;
+  border: 0px;
+  border-top: 1px solid #2d3c49;
+  padding: 0;
+}
+
+#matrix-code-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+#matrix-code {
+  align-self: center;
+  width: 100%;
+}
+
+#featuredWorkTitle {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #7d97ad;
+}
+
+#features-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.single-feature-section{
+  display: flex;
+  flex-direction: column;
+  max-height: auto;
+  margin: 5px;
+  width: 33%;
+}
+
+.image-container {
+  border-width: 1px;
+  border-color: #2d3c49;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  /* background: #2d3c49;  */
+  height: 220px;
+  width:100%;
+}
+
+.feature-image {
+  height: 220px;
+  width: auto;
+}
+
+.shortDescription {
+  text-decoration: underline;
+}
+
+.feature-description {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 100%;
+  margin-left: 12px;
+  padding: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size:27px;
+  color: #2d3c49;
+}
+
+@media screen and (min-width: 980px) {
+
+  .image-container, .feature-image {
+    height:280px;
+  }
+
+  #title {
+    font-size: 2.5em;
+  }
+
+  #subtitle {
+    font-size: 2em;
+  }
+
+  .feature-description {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  body {
+    margin-top: 1%;
+  }
+}
