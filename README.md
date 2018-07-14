@@ -19,6 +19,4 @@
     </a>
 </center>
 
-Sweet [Vapor tutorial by Martin Lasek][tutorial] on how to use Leaf in Vapor3
-
-[tutorial]: https://medium.com/@martinlasek/tutorial-how-to-use-leaf-70d796831ec5
+A "resume" with the beginnings of a portfolio. Server is built in Swift using the Vapor3 framework. 
